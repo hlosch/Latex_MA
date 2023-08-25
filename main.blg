@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: unsrtdin.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Masterarbeit.bib
+Warning--I didn't find a database entry for "?"
+Warning--I didn't find a database entry for "Spreng2013"
+Warning--I didn't find a database entry for "Shawn2008"
+Warning--I didn't find a database entry for "Shawn2014"
+Warning--I didn't find a database entry for "Oechslin2013"
+Warning--empty year in MerriamWebster
+You've used 80 entries,
+            4011 wiz_defined-function locations,
+            1421 strings with 24423 characters,
+and the built_in function-call counts, 62084 in all, are:
+= -- 6329
+> -- 969
+< -- 2566
++ -- 2508
+- -- 355
+* -- 4979
+:= -- 9340
+add.period$ -- 136
+call.type$ -- 80
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 81
+duplicate$ -- 1319
+empty$ -- 4891
+format.name$ -- 831
+if$ -- 12372
+int.to.chr$ -- 0
+int.to.str$ -- 81
+missing$ -- 435
+newline$ -- 558
+num.names$ -- 84
+pop$ -- 371
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 2852
+stack$ -- 0
+substring$ -- 8091
+swap$ -- 561
+text.length$ -- 415
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 3
+warning$ -- 1
+while$ -- 540
+width$ -- 82
+write$ -- 1253
+(There were 6 warnings)

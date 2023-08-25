@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="237.81934mm"
+   height="112.79177mm"
+   viewBox="0 0 237.81934 112.79177"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   sodipodi:docname="interaction.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.5"
+     inkscape:cx="-367"
+     inkscape:cy="241"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker3825"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow2"
+       markerWidth="7.6999998"
+       markerHeight="5.5999999"
+       viewBox="0 0 7.7 5.6"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path3823" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow2"
+       markerWidth="7.6999998"
+       markerHeight="5.5999999"
+       viewBox="0 0 7.7 5.6"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="arrow2L" />
+    </marker>
+    <rect
+       x="190.02704"
+       y="522.99481"
+       width="512.90485"
+       height="302.69794"
+       id="rect3236" />
+    <rect
+       x="686.11536"
+       y="812.2395"
+       width="482.63507"
+       height="213.57022"
+       id="rect2500" />
+    <marker
+       style="overflow:visible"
+       id="Arrow2-8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow2"
+       markerWidth="7.6999998"
+       markerHeight="5.5999999"
+       viewBox="0 0 7.7 5.6"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="arrow2L-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3825-9"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow2"
+       markerWidth="7.6999998"
+       markerHeight="5.5999999"
+       viewBox="0 0 7.7 5.6"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path3823-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow2"
+       markerWidth="7.6999998"
+       markerHeight="5.5999999"
+       viewBox="0 0 7.7 5.6"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="arrow2L-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3825-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow2"
+       markerWidth="7.6999998"
+       markerHeight="5.5999999"
+       viewBox="0 0 7.7 5.6"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path3823-2" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-8.2313549,-67.630569)">
+    <g
+       id="g1889"
+       transform="translate(22.135668)">
+      <rect
+         style="fill:#ffffff;stroke-width:0.302282"
+         id="rect788"
+         width="112.12436"
+         height="35.150097"
+         x="48.943172"
+         y="67.630569" />
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';fill:#ffffff;stroke-width:0.264999"
+         x="61.40144"
+         y="87.20784"
+         id="text1732"><tspan
+           sodipodi:role="line"
+           id="tspan1730"
+           style="font-size:7.05556px;fill:#000000;fill-opacity:1;stroke-width:0.265"
+           x="61.40144"
+           y="87.20784">The &lt;muscial Performance</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text2498"
+       style="font-size:26.6667px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';text-align:center;white-space:pre;shape-inside:url(#rect2500);fill:#ffffff;fill-opacity:1;stroke-width:1.00157" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text3234"
+       style="font-size:26.6667px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';text-align:center;white-space:pre;shape-inside:url(#rect3236);fill:#ffffff;fill-opacity:1;stroke-width:1.00157" />
+    <g
+       id="g3303">
+      <g
+         id="g3291"
+         transform="translate(94.326846,-23.804175)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.229875"
+           id="rect2363"
+           width="87.652779"
+           height="31.145658"
+           x="64.07106"
+           y="173.08086" />
+        <text
+           xml:space="preserve"
+           style="font-size:7.05556px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.264999"
+           x="107.81821"
+           y="186.65381"
+           id="text1893"><tspan
+             sodipodi:role="line"
+             id="tspan1891"
+             style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.265"
+             x="107.81821"
+             y="186.65381">Perfromer </tspan><tspan
+             sodipodi:role="line"
+             style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.265"
+             x="107.81821"
+             y="195.47325"
+             id="tspan2496">Characteristics</tspan></text>
+      </g>
+      <g
+         id="g3285"
+         transform="translate(-68.075507,-64.29354)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.229875"
+           id="rect2363-2"
+           width="87.652779"
+           height="31.145658"
+           x="76.306862"
+           y="213.57022" />
+        <text
+           xml:space="preserve"
+           style="font-size:7.05556px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.264999"
+           x="120.05401"
+           y="227.14317"
+           id="text1893-6"><tspan
+             sodipodi:role="line"
+             style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.265"
+             x="120.05401"
+             y="227.14317"
+             id="tspan2496-7">Musical Factors </tspan><tspan
+             sodipodi:role="line"
+             style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.265"
+             x="120.05401"
+             y="235.96262"
+             id="tspan3279">Non-Musical Factors</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.999991;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2);marker-end:url(#marker3825)"
+       d="M 127.25615,105.95987 56.852184,146.18808"
+       id="path3604" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.999995;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2-8);marker-end:url(#marker3825-9)"
+       d="m 138.05682,105.95436 66.70058,40.1062"
+       id="path3604-3" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.999995;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2-7);marker-end:url(#marker3825-3)"
+       d="m 152.56798,165.15399 -50.5815,-0.0198"
+       id="path3604-5" />
+  </g>
+</svg>

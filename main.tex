@@ -1,0 +1,647 @@
+% A Q&A chapter available in this template can help you when you want to change settings or need examples of how to get what you want.
+
+\documentclass[	11pt,				% Font size
+				twoside,			% Comment if you want to print on one side
+				openright,
+				headsepline,		% Adds a line under the page header
+				headings=small,		% Defines sizing of the headers
+				numbers=noenddot,	% No point at the right side of the section number
+				%draft=false,
+				BCOR=15mm,			% Absolute value of the binding correction.
+				DIV=10, 			% larger value --> larger use of the page
+				%captions=tableheading,
+				paper=a4,			% only change if you want  another paper size
+				abstracton,
+				]{scrreprt}
+				
+
+%-----------------------------------------------------------------------------
+% Document toggles for automatic adaptation of the document type
+%-----------------------------------------------------------------------------
+\usepackage{etoolbox}	% Makes it possible to really code in LaTeX
+% Defining toggles
+\newtoggle{dissertation}
+\newtoggle{thesis}
+\newtoggle{ingerman}
+\newtoggle{inenglish}
+\newtoggle{nobinding}
+\newtoggle{boldcaptions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%TODO Setting values for toggles - Change here to modify the document layout to your needs %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Main properties %%%
+\togglefalse{dissertation}		%if true (\toggletrue{dissertation}): no cover page
+\toggletrue{thesis}				%if true (\toggletrue{thesis}): master or bachelor thesis (set false if \toggletrue{dissertation})
+\togglefalse{ingerman}			%if \toggletrue{ingerman}: german if \togglefalse{ingerman}: english
+
+%%% Secondary properties %%% 
+\togglefalse{nobinding}		%if true: page layout is centered	
+\toggletrue{boldcaptions}  	%if true: Fig. and Tab. are bold
+
+%For oneside print: comment twoside in documentclass (line 4)
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Settings - depending on toggles %%%%
+
+%-----------------------------------------------------------------------------
+% Language selection and translation definitions
+%-----------------------------------------------------------------------------
+% Depending on if german is selected as the main language, this part defines the main and secondary languages in the document and defines correct titles accordingly.
+\iftoggle{ingerman}{%
+	\newcommand{\mainLanguage}{ngerman}
+	\newcommand{\secondLanguage}{english}
+	\newcommand{\abstractMain}{Kurzfassung}
+	\newcommand{\abstractSecond}{Abstract}
+	\newcommand{\listOfFigures}{Abbildungsverzeichnis}
+	\newcommand{\listOfTables}{Tabellenverzeichnis}
+	\newcommand{\nomenclatureName}{Nomenklatur}
+	\newcommand{\appendixName}{Anhang}
+	\newcommand{\GreekSymbols}{Griechische Formelzeichen}
+	\newcommand{\RomanSymbols}{Formelzeichen und Einheiten}
+	\newcommand{\abbreviations}{Abk\"urzungen}
+	\newcommand{\subscripts}{Indizes}
+	\newcommand{\Literaturename}{Literaturverzeichnis}
+}{%
+	\newcommand{\mainLanguage}{english}
+	\newcommand{\secondLanguage}{ngerman}
+	\newcommand{\abstractMain}{Abstract}
+	\newcommand{\abstractSecond}{Kurzfassung}
+	\newcommand{\listOfFigures}{List of Figures}
+	\newcommand{\listOfTables}{List of Tables}
+	\newcommand{\nomenclatureName}{Nomenclature}
+	\newcommand{\appendixName}{Appendix}
+	\newcommand{\GreekSymbols}{Greek Symbols}
+	\newcommand{\RomanSymbols}{Roman Symbols}
+	\newcommand{\abbreviations}{Abbreviations}
+	\newcommand{\subscripts}{Subscripts}
+	\newcommand{\Literaturename}{Literature}
+}
+
+
+%-----------------------------------------------------------------------------
+% Page layout (margins, headers and footers)
+%-----------------------------------------------------------------------------
+\usepackage{geometry}
+%\usepackage{scrlayer-scrpage} % Package to control headers and footers more comprehensive
+%\pagestyle{scrheadings} % To automatically format headers and footers well when having two page print and different left and right margins
+
+\newtoggle{onesideprint}
+\makeatletter
+	\if@twoside
+		\togglefalse{onesideprint}
+	\else
+		\toggletrue{onesideprint}
+	\fi
+\makeatother
+
+\interfootnotelinepenalty=10000 % Prevents the footnotes to split in two pages
+
+\newlength{\lmargin}
+\newlength{\rmargin}
+\newlength{\tmargin}
+\newlength{\bmargin}
+
+% Defining page margins for different document types
+	%page width
+\iftoggle{nobinding}{
+	\iftoggle{dissertation}{
+		\setlength{\lmargin}{27mm}
+		\setlength{\rmargin}{27mm}
+	}{}
+	\iftoggle{thesis}{
+		\setlength{\lmargin}{27.5mm}
+		\setlength{\rmargin}{27.5mm}
+	}{}
+}{	\iftoggle{onesideprint}{                % If with binding and one page print
+		\iftoggle{dissertation}{
+			\setlength{\lmargin}{30mm}
+			\setlength{\rmargin}{24mm}
+		}{}
+		\iftoggle{thesis}{
+			\setlength{\lmargin}{30mm}
+			\setlength{\rmargin}{25mm}
+		}{}
+		}{                                  % If with binding and two page print
+		\iftoggle{dissertation}{
+			\setlength{\lmargin}{24mm}
+			\setlength{\rmargin}{30mm}
+		}{}
+		\iftoggle{thesis}{
+			\setlength{\lmargin}{30mm}
+			\setlength{\rmargin}{25mm}
+	}{}}
+}
+	%page height
+\iftoggle{dissertation}{
+	\setlength{\tmargin}{35mm}
+	\setlength{\bmargin}{35mm}
+}{}
+\iftoggle{thesis}{
+	\setlength{\tmargin}{37mm}
+	\setlength{\bmargin}{38mm}
+}{}
+
+% Setting the page margins
+\geometry{a4paper, left=\lmargin, right=\rmargin, top=\tmargin, bottom=\bmargin}
+
+\newlength{\offsetCoverPage}
+\newlength{\marginCoverPage}
+\iftoggle{onesideprint}{%
+	\setlength{\offsetCoverPage}{-1mm}
+	\setlength{\marginCoverPage}{0mm}
+
+}{%
+	\setlength{\offsetCoverPage}{0mm}
+	\setlength{\marginCoverPage}{0.25mm}
+}
+
+%% Setting header and footers
+\usepackage{fancyhdr}	% This package is easier to control than the already implemented header and footer controls in the Koma-Script class
+\pagestyle{fancy}
+
+\renewcommand{\sectionmark}[1]{\normalsize\markright{\thesection\ #1}{}}
+\renewcommand{\chaptermark}[1]{\normalsize\markboth{\thechapter\ #1}{}}
+\lhead{\leftmark}
+\chead{}
+\rhead{\rightmark}
+
+%-----------------------------------------------------------------------------
+% Base packages
+%-----------------------------------------------------------------------------
+\usepackage[T1]{fontenc}	 % Enables font encoding for accented characters
+\usepackage[utf8]{inputenc}  % Enables input of accented characters
+\usepackage[english,ngerman]{babel}	% Defines the document language
+\usepackage{ifpdf} 		
+% This creates a true boolean if you are executing your code using PDFLatex or LuaLaTex, otherwise it is false. It helps later on to define correct package options for different compiling methods. (See PDF-Setup)
+
+\usepackage{blindtext} % Just to create lorem ipsum text in this template
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH] \THEYEAR}
+
+% There exist several todo packages like todonotes, todo, or easy-todo.
+% Choose one todo package and import it via the \usepackage{} command.
+
+%-----------------------------------------------------------------------------
+% Font properties
+%-----------------------------------------------------------------------------
+%\usepackage{fourier} %PDF-compatible font "Utopia". There exists a free look-alike: Heuristica
+\usepackage{lmodern} % So that headings don't pixelate (bitmap font to vector font); Don't use it simultaneously with fourier (previous font, see more at issues 16 and 20)
+\makeatletter % No warnings because of a replaced font
+  \let\@font@info\@gobble
+  \let\@font@warning\@gobble
+\makeatother
+
+\iftoggle{boldcaptions}{
+	\renewcommand{\caplabelfont}{\bfseries} % Fig. and Tab. are bold
+}{}
+
+
+%-----------------------------------------------------------------------------
+% Redefining bullet points
+%-----------------------------------------------------------------------------
+\AtBeginDocument{
+  \renewcommand{\labelitemi}{\(\bullet\)}
+  \renewcommand{\labelitemii}{\(\circ\)}
+}
+
+
+%-----------------------------------------------------------------------------
+% Line and paragraph spacing
+%-----------------------------------------------------------------------------
+\usepackage{setspace} % Change Linespread
+\onehalfspacing % Linespread 1.5
+\setlength\parskip{\medskipamount} % Small linespread between two paragraphs
+\setlength\parindent{0pt} % No indentation in the first line of a new paragraph
+
+
+%-----------------------------------------------------------------------------
+% Color definitions
+%-----------------------------------------------------------------------------
+\usepackage{xcolor}
+% The standart ERC colors (dark variant)
+% Check sharepoint for lighter variants if needed
+\definecolor{ercred}{RGB}{229,48,39}	% Color of the ERC logo
+\definecolor{ercblue}{RGB}{16, 88, 176}
+\definecolor{ercorange}{RGB}{244, 115, 40}
+\definecolor{ercviolett}{RGB}{95, 55, 155}
+\definecolor{ercdarkred}{RGB}{155, 35, 30}
+\definecolor{ercpink}{RGB}{190, 65, 152}
+\definecolor{ercdarkgreen}{RGB}{0, 135, 70}
+\definecolor{ercgray}{RGB}{120, 120, 120}
+\definecolor{ercredPics}{RGB}{221,64,45}
+
+% The official RWTH colors
+% Check official document for lighter colors if needed
+\definecolor{rwthblue}{RGB}{0,84,159}
+\definecolor{rwthblack}{RGB}{0,0,0}
+\definecolor{rwthmagenta}{RGB}{227,0,102}
+\definecolor{rwthyellow}{RGB}{255,237,0}
+\definecolor{rwthpetrol}{RGB}{0,97,101}
+\definecolor{rwthturquoise}{RGB}{0,152,161}
+\definecolor{rwthgreen}{RGB}{87,171,39}
+\definecolor{rwthmaygreen}{RGB}{189,205,0}
+\definecolor{rwthorange}{RGB}{246,168,0}
+\definecolor{rwthred}{RGB}{204,7,30}
+\definecolor{rwthbordeaux}{RGB}{161,16,53}
+\definecolor{rwthviolett}{RGB}{97,33,88}
+\definecolor{rwthlila}{RGB}{122,11,172}
+
+% Color aliases
+% Use these in the document to be able to switch easily
+\colorlet{color0}{ercred}
+\colorlet{color1}{ercblue}
+\colorlet{color2}{ercorange}
+\colorlet{color3}{ercviolett}
+\colorlet{color4}{ercdarkred}
+\colorlet{color5}{ercpink}
+\colorlet{color6}{ercdarkgreen}
+
+%-----------------------------------------------------------------------------
+% List environments
+%-----------------------------------------------------------------------------
+\usepackage{enumitem}
+% This provides more user control over the list environments. Here you can create your own enumeration format, etc. (See Q&A Environment Setup as an example)
+
+
+%-----------------------------------------------------------------------------
+% Style formats 
+%-----------------------------------------------------------------------------
+\usepackage{listings}
+% This enables writing programming code as written in a programming environment in LaTeX.
+
+\lstset{literate=%
+    {ä}{{\"a}}1
+    {Ä}{{\"A}}1
+    {ö}{{\"o}}1
+    {Ö}{{\"O}}1
+    {ü}{{\"u}}1
+    {Ü}{{\"Ü}}1
+    {ß}{{\ss}}1
+}
+% Adds the possibility to include german special charachters in the lstlisting.
+
+\usepackage{textcomp} % Is needed, if "\usepackage{lmodern}" is used (Line 195)
+\usepackage{Resources/ModelicaStyle}	% Modelica style file
+
+%-----------------------------------------------------------------------------
+% Nomenclature
+%-----------------------------------------------------------------------------
+\usepackage[intoc]{nomencl}		% Used for automatic generation of nomenclature
+\RequirePackage{ifthen}			% Checks if ifthen functions
+% Defines the nomenclature sections
+\renewcommand{\nomgroup}[1]{%
+	\ifthenelse{\equal{#1}{G}}{\item[\newline\textbf{\GreekSymbols}]}{
+	\ifthenelse{\equal{#1}{U}}{\item[\newline\textbf{\subscripts}]}{
+	\ifthenelse{\equal{#1}{A}}{\item[\newline\textbf{\abbreviations}]}{
+	\ifthenelse{\equal{#1}{S}}{\item[\newline\textbf{\RomanSymbols}]}{
+	\ifthenelse{\equal{#1}{Y}}{\item[\newline\textbf{Codes used for configurations of simulation}]}{
+}}}}}
+}
+% Changing some of the spacings
+\newcommand{\nomunit}[1]{%
+\renewcommand{\nomentryend}{\hspace*{\fill}#1}%
+}
+\renewcommand{\nomlabel}[1]{\hspace{2.5em}#1}
+\makenomenclature
+\setlength\nomlabelwidth{2.5cm}
+
+
+%-----------------------------------------------------------------------------
+% Mathematic
+%-----------------------------------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\DeclareMathAlphabet\mathbfcal{OMS}{cmsy}{b}{n}
+%-----------------------------------------------------------------------------
+% Q&A environment setup
+%-----------------------------------------------------------------------------
+% The following commands are only used for the Q&A format in the examples of the template. You can remove this in your main document. Note that this is also useful for cerating exam formats, etc.
+%\newenvironment{QandA}{\begin{enumerate}[label=\bfseries\arabic*.]\bfseries}
+%                      {\end{enumerate}}
+%\newenvironment{answered}{\par\normalfont}{}
+
+
+%-----------------------------------------------------------------------------
+% PDF-Setup
+%-----------------------------------------------------------------------------
+\ifpdf
+	%We use PDFLaTeX
+	\usepackage[pdftex]{graphicx} 
+	\pdfimageresolution=100
+	\pdfminorversion=7
+	\pdfcompresslevel=9
+	\usepackage[pdftex,
+		urlcolor=blue,
+		linktoc=all,
+		colorlinks=true,
+		linkcolor=black,
+		citecolor=black,
+		pdfview=FitH,
+		pdfstartview=FitH,
+		plainpages=false]{hyperref}	% Allows cross references and hyperlinks
+	\hypersetup{
+		pdfauthor={Your Name here},
+        pdftitle={Name of your thesis},
+        pdfsubject={},
+        pdfkeywords={several helpful keywords},
+        pdfproducer={LaTeX with hyperref},
+        pdfcreator={pdflatex}}
+    \usepackage[figure,figure*]{hypcap}
+\else
+	%DVI oder PS Ausgabe
+	\usepackage{graphicx} 
+\fi
+\usepackage{pdfpages}	
+% Simplifies the inclusion of whole PDF-Pages, e.g. cover page. Should be placed after "graphicx" package
+
+
+%-----------------------------------------------------------------------------
+% Units and symboles
+%-----------------------------------------------------------------------------
+\usepackage{siunitx}	
+% Prefered to package "siunits". Should be placed after "graphicx" package
+
+\usepackage[official]{eurosym}
+\DeclareUnicodeCharacter{20AC}{\euro} 
+% The normale euro symbol via [Alt Gr][€] is replaced by a high quality one
+
+%-----------------------------------------------------------------------------
+% General floats
+%-----------------------------------------------------------------------------
+\usepackage{float}
+\usepackage{placeins}	% Allows more control of the floats, e.g. \FloatBarrier
+\usepackage{caption}	
+\usepackage{subcaption}	% Allows manipulation of caption entries in lists
+
+%-----------------------------------------------------------------------------
+% Figures
+%-----------------------------------------------------------------------------
+\graphicspath{{Figures/}}	% Defining where the figure are located (for pdf_tex).
+
+\usepackage{tikz,pgfplots} \pgfplotsset{compat=newest}
+% Allows using TikZ plots with the newest package available
+\usetikzlibrary{plotmarks, shapes, arrows, positioning, shadows, trees}
+% plotmarks is used in the diagrams, other values are for flow charts, etc.
+
+%\usetikzlibrary{external}	% Uncomment to activate external TikZ compliation
+%\tikzexternalize[prefix=Figures/TikZ]	% Uncomment to place external tikZ files in a separate folder.
+
+\newlength\figureheight 
+\newlength\figurewidth 
+% Defining the length and height variables of the TikZ plots
+
+
+%-----------------------------------------------------------------------------
+% Tables
+%-----------------------------------------------------------------------------
+\usepackage{longtable}	% For tables longer than a page
+\usepackage{multirow}	% Allows multirow in tables
+\usepackage{multicol}	% Allows multicolumn in tables
+\usepackage{booktabs}	% Better horizontal lines in tables \toprule \midrule ...
+
+\usepackage{dcolumn} 	% Allows allignment by decimal point
+  \newcolumntype{d}[1]{D{.}{.}{#1}}	% Defining some new formats
+  \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+
+%-----------------------------------------------------------------------------
+% References and Citations
+%-----------------------------------------------------------------------------
+%\usepackage{varioref}
+\usepackage[square,numbers]{natbib}
+%\usepackage{bibunits}
+
+
+%-----------------------------------------------------------------------------
+% Manually added packages
+%-----------------------------------------------------------------------------
+\usepackage{ziffer}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-----------------------------------------------------------------------------
+% DOCUMENT BEGINS HERE!
+%-----------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\pagestyle{empty}
+\newcounter{Hilfszaehler}
+
+\expandafter\selectlanguage\expandafter{\mainLanguage}
+
+\cleardoublepage
+\pagenumbering{Roman} % roman page numbers
+
+
+%-----------------------------------------------------------------------------
+% Cover page
+%-----------------------------------------------------------------------------
+% Based on the document type and language, the template decides if and which cover page should be used and includes it in the final document.
+\includepdf{Chapters/Deckblatt_MA.pdf}
+\iftoggle{thesis}{%
+	\iftoggle{ingerman}{%
+		\input{Chapters/ThesisCoverPage_de.tex}
+	}%{%
+		\input{Chapters/ThesisCoverPage_en.tex}
+	%}
+}{}
+%\iftoggle{dissertation}{%
+%	\input{Chapters/Promotion_cover_page_promotionsgesuch.tex}
+%	\input{Chapters/Promotion_cover_page_publication.tex}
+%}
+\newpage 
+\thispagestyle{empty}
+\quad 
+\newpage
+
+%-----------------------------------------------------------------------------
+% Page numbers
+%-----------------------------------------------------------------------------
+\pagenumbering{Roman} % roman page numbers
+
+\iftoggle{onesideprint}{
+	\fancyfoot[C]{\thepage}
+	\fancyfoot[LE,RO]{}}
+	{
+	\fancyfoot[LE,RO]{\thepage}
+	\fancyfoot[C]{}
+	}
+
+%-----------------------------------------------------------------------------
+% Abstract in English and German (Both are required)
+%-----------------------------------------------------------------------------
+% Different documents have different types of showing the title of the abstract, This part assigns the correct formmat to your document considering the main and secondary language.
+\refstepcounter{Hilfszaehler}
+\iftoggle{thesis}{%
+	\begin{abstract}
+		\input{Chapters/Abstract_mainLanguage}
+	\end{abstract}
+	%\expandafter\selectlanguage\expandafter{\secondLanguage}
+	%\begin{abstract}
+		%\input{Chapters/Abstract_secondLanguage} 
+	%\end{abstract}
+	%\expandafter\selectlanguage\expandafter{\mainLanguage}
+}{}
+\iftoggle{dissertation}{%	
+	\chapter*{\abstractMain}	
+	\input{Chapters/Abstract_mainLanguage}
+	\expandafter\selectlanguage\expandafter{\secondLanguage}
+	\chapter*{\abstractSecond}
+	\input{Chapters/Abstract_secondLanguage} 
+	\expandafter\selectlanguage\expandafter{\mainLanguage}
+}{}
+
+%-----------------------------------------------------------------------------
+% Table of content
+%-----------------------------------------------------------------------------
+\cleardoublepage
+\iftoggle{ingerman}{%
+	\renewcommand{\contentsname}{Inhaltsverzeichnis}
+}{%
+	\renewcommand{\contentsname}{Table of Contents}
+}
+
+\pdfbookmark{\contentsname}{toc} % Link in PDF's bookmarks to TOC
+%\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+
+%-----------------------------------------------------------------------------
+% Nomenclature
+%-----------------------------------------------------------------------------
+% You can either add a long table as the nomenclature or use the "nomencl" package. The advantage of the long table is that you have more control on how it looks at the end while the disadvantages are that you have to sort everything manually and there is no possibility to add individual definitions in between the text. The "nomencl" package automatically creates the nomenclature based on definitions within the complete document. The disadvantage is you have to run <MakeIndex> during compilation. More info follows.
+%\cleardoublepage
+%\refstepcounter{Hilfszaehler}
+%\addcontentsline{toc}{chapter}{\nomenclatureName}
+
+%% The long table method ... (uncomment here and comment the next part)
+%\pagestyle{plain}
+%\include{Chapters/NomenclatureTable} 
+%% You have to change the language inside the table yourself
+
+% Using the "nomencl" package
+% For the first time: % Run the following command in cmd at the directory the latex file is: 
+% makeindex main.nlo -s nomencl.ist -o main.nls
+% Or in Texmaker configuration for MakeIndex write: 
+% makeindex %.nlo -s nomencl.ist -o %.nls
+% For nomenclature to compile, you have to execute "MakeIndex" after your first document compilation.
+
+%\input{Chapters/Nomenclature} % You can use a separate file or add the values inside your existing document
+%\printnomenclature
+
+%-----------------------------------------------------------------------------
+% List of figures
+%-----------------------------------------------------------------------------
+\cleardoublepage
+\refstepcounter{Hilfszaehler}
+\addcontentsline{toc}{chapter}{\listOfFigures}
+\listoffigures
+
+%-----------------------------------------------------------------------------
+% List of tables
+%-----------------------------------------------------------------------------
+\cleardoublepage
+\refstepcounter{Hilfszaehler}
+\addcontentsline{toc}{chapter}{\listOfTables}
+\listoftables
+
+%-----------------------------------------------------------------------------
+% Header of each page
+%-----------------------------------------------------------------------------
+\pagestyle{fancy} %\lhead{}\chead{}\rhead{}
+\iftoggle{onesideprint}{
+	\fancyhead[C]{\leftmark}
+	\fancyhead[LE,LO]{}
+	\fancyhead[RE,RO]{}
+	}{
+	\fancyhead[LE]{\leftmark}
+	\fancyhead[LO]{}
+	\fancyhead[RO]{\rightmark}
+	\fancyhead[RE]{}
+	}
+
+
+
+%-----------------------------------------------------------------------------
+% Main chapters 		 
+%TODO	%%% ADD YOUR CHAPTERS HERE %%%
+%-----------------------------------------------------------------------------
+\cleardoublepage
+\pagenumbering{arabic}
+\input{Chapters/Introduction}
+\input{Chapters/Background}
+\input{Chapters/Methodology}
+\input{Chapters/Results}
+\input{Chapters/Discussion}
+\input{Chapters/Summary}
+%\input{Chapters/QandA}
+%\input{Chapters/LoremIpsum}
+
+%-----------------------------------------------------------------------------
+% Bibliography
+%-----------------------------------------------------------------------------
+\cleardoublepage
+\refstepcounter{Hilfszaehler}
+\addcontentsline{toc}{chapter}{\bibname}
+\protect\bibliographystyle{unsrtdin} % This style is not mandatory. Another would be e.g. natdin.
+\bibliography{Masterarbeit}
+
+
+
+%-----------------------------------------------------------------------------
+% Appendix		 	     
+%-----------------------------------------------------------------------------
+\cleardoublepage
+\FloatBarrier	% Prevents figures/tables to move to appendix
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+%Prevents Appendix sections to show in the TOC if you set the number to 0
+
+\captionsetup{list=no}	
+% Prevents captions of figures/tables in appendix t appear in the list of figures and tables
+
+\begin{appendix}
+\newpage\thispagestyle{empty}~
+\vfill{}\vspace{-1\parskip}
+\begin{center}\textsf{\textbf{\huge \appendixName}}\end{center}{\huge \par}
+\vfill{}
+~
+%TODO	%%% ADD YOUR APPENDIX CHAPTERS HERE %%%
+\newpage
+\input{Chapters/Appendix.tex}
+\end{appendix}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+% Sets the TOC depth back to its original value
+
+
+
+%-----------------------------------------------------------------------------
+% Declaration of originality
+%-----------------------------------------------------------------------------
+\pagestyle{empty}
+\clearpage
+\iftoggle{thesis}{%
+	\iftoggle{ingerman}{%
+		\input{Chapters/declarationOfOriginality_de.tex}
+	}%{%
+		\input{Chapters/declarationOfOriginality_en.tex}
+	%}
+}{}
+
+
+
+\end{document}
