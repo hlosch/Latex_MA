@@ -8,51 +8,51 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: Masterarbeit.bib
-Warning--I didn't find a database entry for "?"
-Warning--I didn't find a database entry for "Spreng2013"
-Warning--I didn't find a database entry for "Shawn2008"
-Warning--I didn't find a database entry for "Shawn2014"
-Warning--I didn't find a database entry for "Oechslin2013"
+Repeated entry---line 694 of file Masterarbeit.bib
+ : @article{Bottcher2022
+ :                      ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Bangert2010"
 Warning--empty year in MerriamWebster
-You've used 80 entries,
+You've used 75 entries,
             4011 wiz_defined-function locations,
-            1421 strings with 24423 characters,
-and the built_in function-call counts, 62084 in all, are:
-= -- 6329
-> -- 969
-< -- 2566
-+ -- 2508
-- -- 355
-* -- 4979
-:= -- 9340
-add.period$ -- 136
-call.type$ -- 80
+            1376 strings with 23872 characters,
+and the built_in function-call counts, 60591 in all, are:
+= -- 6141
+> -- 1010
+< -- 2675
++ -- 2624
+- -- 371
+* -- 4810
+:= -- 9308
+add.period$ -- 127
+call.type$ -- 75
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 81
-duplicate$ -- 1319
-empty$ -- 4891
-format.name$ -- 831
-if$ -- 12372
+cite$ -- 76
+duplicate$ -- 1265
+empty$ -- 4569
+format.name$ -- 879
+if$ -- 11850
 int.to.chr$ -- 0
-int.to.str$ -- 81
-missing$ -- 435
-newline$ -- 558
-num.names$ -- 84
-pop$ -- 371
+int.to.str$ -- 76
+missing$ -- 406
+newline$ -- 520
+num.names$ -- 79
+pop$ -- 350
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2852
+skip$ -- 2926
 stack$ -- 0
-substring$ -- 8091
-swap$ -- 561
-text.length$ -- 415
+substring$ -- 7695
+swap$ -- 555
+text.length$ -- 419
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 3
 warning$ -- 1
-while$ -- 540
-width$ -- 82
-write$ -- 1253
-(There were 6 warnings)
+while$ -- 536
+width$ -- 77
+write$ -- 1167
+(There was 1 error message)
