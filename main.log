@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.18)  28 AUG 2023 12:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.18)  28 AUG 2023 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1710,7 +1710,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count382
 \LT@p@ftn=\toks50
 )
-Class scrreprt Info: longtable captions redefined on input line 407.
+Class scrreprt Info: longtable captions redefined on input line 408.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
@@ -1874,7 +1874,7 @@ e
 ))
 \c@lstlisting=\count404
 \AtBeginShipoutBox=\box125
-Package hyperref Info: Link coloring ON on input line 437.
+Package hyperref Info: Link coloring ON on input line 438.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1884,9 +1884,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count405
 )
-LaTeX Info: Redefining \ref on input line 437.
-LaTeX Info: Redefining \pageref on input line 437.
-LaTeX Info: Redefining \nameref on input line 437.
+LaTeX Info: Redefining \ref on input line 438.
+LaTeX Info: Redefining \pageref on input line 438.
+LaTeX Info: Redefining \nameref on input line 438.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
@@ -1947,37 +1947,37 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 <Chapters/Deckblatt_MA.pdf, id=139, 614.295pt x 794.97pt>
 File: Chapters/Deckblatt_MA.pdf Graphic file (type pdf)
 <use Chapters/Deckblatt_MA.pdf>
-Package pdftex.def Info: Chapters/Deckblatt_MA.pdf  used on input line 453.
+Package pdftex.def Info: Chapters/Deckblatt_MA.pdf  used on input line 454.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Chapters/Deckblatt_MA.pdf Graphic file (type pdf)
 <use Chapters/Deckblatt_MA.pdf>
-Package pdftex.def Info: Chapters/Deckblatt_MA.pdf  used on input line 453.
+Package pdftex.def Info: Chapters/Deckblatt_MA.pdf  used on input line 454.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 <Chapters/Deckblatt_MA.pdf, id=142, page=1, 614.295pt x 794.97pt>
 File: Chapters/Deckblatt_MA.pdf Graphic file (type pdf)
 <use Chapters/Deckblatt_MA.pdf, page 1>
 Package pdftex.def Info: Chapters/Deckblatt_MA.pdf , page1 used on input line 4
-53.
+54.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Chapters/Deckblatt_MA.pdf Graphic file (type pdf)
 <use Chapters/Deckblatt_MA.pdf, page 1>
 Package pdftex.def Info: Chapters/Deckblatt_MA.pdf , page1 used on input line 4
-53.
+54.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Chapters/Deckblatt_MA.pdf Graphic file (type pdf)
 <use Chapters/Deckblatt_MA.pdf, page 1>
 Package pdftex.def Info: Chapters/Deckblatt_MA.pdf , page1 used on input line 4
-53.
+54.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Chapters/Deckblatt_MA.pdf Graphic file (type pdf)
 <use Chapters/Deckblatt_MA.pdf, page 1>
 Package pdftex.def Info: Chapters/Deckblatt_MA.pdf , page1 used on input line 4
-53.
+54.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Chapters/Deckblatt_MA.pdf Graphic file (type pdf)
 <use Chapters/Deckblatt_MA.pdf, page 1>
 Package pdftex.def Info: Chapters/Deckblatt_MA.pdf , page1 used on input line 4
-53.
+54.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [1
 
@@ -2002,7 +2002,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.497 }{}
+l.498 }{}
           [1
 
 
@@ -2010,7 +2010,7 @@ l.497 }{}
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.510 \cleardoublepage
+l.511 \cleardoublepage
                        [2
 
 
@@ -2022,7 +2022,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.III}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.549 \cleardoublepage
+l.550 \cleardoublepage
                        [3
 
 
@@ -2030,7 +2030,7 @@ l.549 \cleardoublepage
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.549 \cleardoublepage
+l.550 \cleardoublepage
                        [4
 
 
@@ -2088,53 +2088,58 @@ chapter 2.
 ]
 
 Package natbib Warning: Citation `Bangert2010' on page 4 undefined on input lin
-e 20.
+e 19.
 
 [4]
-Overfull \hbox (4.90198pt too wide) in paragraph at lines 42--48
-[]\T1/lmr/m/n/10.95 Matziorinis 2023: sub-se-quent study of ro-gen-moser 2018; 
-phys-i-cal ac-tiv-ity pre-dic-tive of brainage
- []
+
+Package natbib Warning: Citation `Schellenberg2006' on page 5 undefined on inpu
+t line 32.
+
+
+Package natbib Warning: Citation `Chan1998' on page 5 undefined on input line 3
+2.
 
 [5] [6] [7] [8] [9]
-<Assessing.jpg, id=457, 520.344pt x 292.6935pt>
+<Assessing.jpg, id=475, 520.344pt x 292.6935pt>
 File: Assessing.jpg Graphic file (type jpg)
 <use Assessing.jpg>
-Package pdftex.def Info: Assessing.jpg  used on input line 98.
+Package pdftex.def Info: Assessing.jpg  used on input line 86.
 (pdftex.def)             Requested size: 426.81186pt x 240.08168pt.
- [10] [11 <./Assessing.jpg>]) (./Chapters/Methodology.tex
-[12] [13] [14
+ [10]
+Underfull \vbox (badness 4341) has occurred while \output is active []
 
-
-]
+ [11 <./Assessing.jpg>]) (./Chapters/Methodology.tex [12]
 chapter 3.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15] [16]
+[13
+
+
+] [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
-[18] [19] (./Figures/interaction.pdf_tex
-<Figures/interaction.pdf, id=538, page=1, 676.66154pt x 320.92368pt>
+ [15]
+[16] [17] (./Figures/interaction.pdf_tex
+<Figures/interaction.pdf, id=547, page=1, 676.66154pt x 320.92368pt>
 File: Figures/interaction.pdf Graphic file (type pdf)
 <use Figures/interaction.pdf, page 1>
 Package pdftex.def Info: Figures/interaction.pdf , page1 used on input line 56.
 
 (pdftex.def)             Requested size: 396.91325pt x 188.24641pt.
-<Figures/interaction.pdf, id=539, page=2, 676.66154pt x 320.92368pt>
+<Figures/interaction.pdf, id=548, page=2, 676.66154pt x 320.92368pt>
 File: Figures/interaction.pdf Graphic file (type pdf)
 <use Figures/interaction.pdf, page 2>
 Package pdftex.def Info: Figures/interaction.pdf , page2 used on input line 59.
 
 (pdftex.def)             Requested size: 396.91325pt x 188.24641pt.
-<Figures/interaction.pdf, id=540, page=3, 676.66154pt x 320.92368pt>
+<Figures/interaction.pdf, id=549, page=3, 676.66154pt x 320.92368pt>
 File: Figures/interaction.pdf Graphic file (type pdf)
 <use Figures/interaction.pdf, page 3>
 Package pdftex.def Info: Figures/interaction.pdf , page3 used on input line 61.
 
 (pdftex.def)             Requested size: 396.91325pt x 188.24641pt.
-) [20 <./Figures/interaction.pdf> <./Figures/interaction.pdf
+) [18 <./Figures/interaction.pdf> <./Figures/interaction.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/interaction.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
@@ -2143,31 +2148,31 @@ PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/interaction.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Rater.jpg, id=556, 520.344pt x 292.6935pt>
+<Rater.jpg, id=565, 520.344pt x 292.6935pt>
 File: Rater.jpg Graphic file (type jpg)
 <use Rater.jpg>
 Package pdftex.def Info: Rater.jpg  used on input line 159.
 (pdftex.def)             Requested size: 426.81186pt x 240.08168pt.
- [21 <./Rater.jpg>] [22]) (./Chapters/Results.tex [23] [24
+ [19 <./Rater.jpg>] [20]) (./Chapters/Results.tex [21] [22
 
 
 ]
 chapter 4.
-<ICC.jpg, id=587, 667.49374pt x 296.10625pt>
+<ICC.jpg, id=597, 667.49374pt x 296.10625pt>
 File: ICC.jpg Graphic file (type jpg)
 <use ICC.jpg>
 Package pdftex.def Info: ICC.jpg  used on input line 12.
 (pdftex.def)             Requested size: 341.43582pt x 151.464pt.
-[25 <./ICC.jpg>]
+[23 <./ICC.jpg>]
 
-LaTeX Warning: Reference `fig:heat' on page 26 undefined on input line 23.
+LaTeX Warning: Reference `fig:heat' on page 24 undefined on input line 23.
 
 
 Overfull \hbox (10.08604pt too wide) in paragraph at lines 30--34
  [][] 
  []
 
-<pred_vals.jpeg, id=598, 677.53125pt x 451.6875pt>
+<pred_vals.jpeg, id=607, 677.53125pt x 451.6875pt>
 File: pred_vals.jpeg Graphic file (type jpg)
 <use pred_vals.jpeg>
 Package pdftex.def Info: pred_vals.jpeg  used on input line 45.
@@ -2175,137 +2180,82 @@ Package pdftex.def Info: pred_vals.jpeg  used on input line 45.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26] [27 <./pred_vals.jpeg>] [28] [29]
+[24] [25 <./pred_vals.jpeg>] [26] [27]
 Underfull \vbox (badness 2781) has occurred while \output is active []
 
- [30]
-<Loadings.jpg, id=623, 520.344pt x 292.6935pt>
+ [28]
+<Loadings.jpg, id=633, 520.344pt x 292.6935pt>
 File: Loadings.jpg Graphic file (type jpg)
 <use Loadings.jpg>
 Package pdftex.def Info: Loadings.jpg  used on input line 103.
 (pdftex.def)             Requested size: 426.81186pt x 240.08168pt.
 
-[31 <./Loadings.jpg>]
-<Musicality.jpeg, id=634, 572.1375pt x 304.88907pt>
+[29 <./Loadings.jpg>]
+<Musicality.jpeg, id=643, 572.1375pt x 304.88907pt>
 File: Musicality.jpeg Graphic file (type jpg)
 <use Musicality.jpeg>
 Package pdftex.def Info: Musicality.jpeg  used on input line 116.
 (pdftex.def)             Requested size: 426.79732pt x 227.43805pt.
- [32 <./Musicality.jpeg>]) (./Chapters/Discussion.tex
-[33] [34
+ [30 <./Musicality.jpeg>]) (./Chapters/Discussion.tex
+[31] [32
 
 
 ]
 chapter 5.
-[35]
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[36]) (./Chapters/Summary.tex [37] [38
+[34]) (./Chapters/Summary.tex [35] [36
 
 
 ]
 chapter 6.
-) [39] [40
+) [37] [38
 
 
 ] (./main.bbl
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-! Missing $ inserted.
-<inserted text> 
-                $
-l.85 \newblock DOI 10.1162/JOCN_
-                                A_00281. --
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Double subscript.
-l.85 \newblock DOI 10.1162/JOCN_A_
-                                  00281. --
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.87 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.87 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[41
+) [39
 
 
 ]
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.87 
-     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-Underfull \hbox (badness 1014) in paragraph at lines 154--160
-[]\T1/lmr/m/sc/10.95 Park\T1/lmr/m/n/10.95 , Denise C. ; \T1/lmr/m/sc/10.95 Reu
-ter-Lorenz\T1/lmr/m/n/10.95 , Pa-tri-cia:  The Adap-tive Brain: Ag-ing and
+Underfull \hbox (badness 1490) in paragraph at lines 152--158
+\T1/lmtt/m/n/10.95 / / dx . doi . org / 10 . 1146 / ANNUREV . PSYCH . 59 . 1030
+06 . 093656$[][]\T1/lmr/m/n/10.95 . --  DOI 10.1146/AN-
  []
 
-[42] [43]
-Underfull \hbox (badness 2443) in paragraph at lines 282--289
-[]\T1/lmr/m/sc/10.95 Hanna-Pladdy\T1/lmr/m/n/10.95 , Brenda ; \T1/lmr/m/sc/10.9
-5 MacKay\T1/lmr/m/n/10.95 , Ali-cia:  The re-la-tion-ship be-tween in-stru-
- []
-
-
-Underfull \hbox (badness 1292) in paragraph at lines 282--289
-\T1/lmr/m/n/10.95 men-tal mu-si-cal ac-tiv-ity and cog-ni-tive ag-ing.  In: \T1
-/lmr/m/it/10.95 Neu-ropsy-chol-ogy \T1/lmr/m/n/10.95 25 (2011), Nr.
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 282--289
-\T1/lmr/m/n/10.95 3, S. 378--386.  [][]$\T1/lmtt/m/n/10.95 http : / / dx . doi 
-. org / 10 . 1053 / j . gastro . 2016 . 08 . 014 . CagY$[][]\T1/lmr/m/n/10.95 .
- --  DOI
- []
-
-[44] [45] [46]
-Underfull \hbox (badness 4872) in paragraph at lines 577--583
+[40] [41] [42] [43] [44] [45]
+Underfull \hbox (badness 1762) in paragraph at lines 611--617
 []\T1/lmr/m/sc/10.95 Russell\T1/lmr/m/n/10.95 , Brian E.:  \T1/lmr/m/it/10.95 T
 he Em-pir-i-cal Test-ing of Mu-si-cal Per-for-mance As-sess-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--583
+Underfull \hbox (badness 2600) in paragraph at lines 611--617
 \T1/lmr/m/it/10.95 ment Paradigm\T1/lmr/m/n/10.95 .  [][]$\T1/lmtt/m/n/10.95 ht
 tps : / / scholarship . miami . edu / esploro / outputs / doctoral /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 585--589
+Underfull \hbox (badness 10000) in paragraph at lines 611--617
+\T1/lmtt/m/n/10.95 The-[]Empirical-[]Testing-[]of-[]Musical-[]Performance / 991
+031447324002976$[][]\T1/lmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--623
 []\T1/lmr/m/sc/10.95 AMEB\T1/lmr/m/n/10.95 :  \T1/lmr/m/it/10.95 Pi-ano syl-lab
 us\T1/lmr/m/n/10.95 .  [][]$\T1/lmtt/m/n/10.95 https : / / www . ameb . edu . a
 u /
  []
 
-[47]) [48]
+[46]) [47] [48
+
+
+]
 
 Class scrreprt Warning: You are using `\begin{appendix}...\end{appendix}'.
 (scrreprt)              You should note, that `\appendix' is a mostly globally
@@ -2318,17 +2268,14 @@ Class scrreprt Warning: You are using `\begin{appendix}...\end{appendix}'.
 (scrreprt)              inconsistent.
 (scrreprt)              Because of this, you should remove `\end{appendix}'
 (scrreprt)              and replace `\begin{appendix}' by command
-(scrreprt)              `\appendix' on input line 616.
+(scrreprt)              `\appendix' on input line 617.
 
-[49
-
-
-] (./Chapters/Appendix.tex [50
+[49] (./Chapters/Appendix.tex [50
 
 
 ]
 chapter A.
-<BeethovenOdeSimple.pdf, id=791, 598.235pt x 845.1575pt>
+<BeethovenOdeSimple.pdf, id=810, 598.235pt x 845.1575pt>
 File: BeethovenOdeSimple.pdf Graphic file (type pdf)
 <use BeethovenOdeSimple.pdf>
 Package pdftex.def Info: BeethovenOdeSimple.pdf  used on input line 5.
@@ -2337,7 +2284,7 @@ File: BeethovenOdeSimple.pdf Graphic file (type pdf)
 <use BeethovenOdeSimple.pdf>
 Package pdftex.def Info: BeethovenOdeSimple.pdf  used on input line 5.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<BeethovenOdeSimple.pdf, id=794, page=1, 598.235pt x 845.1575pt>
+<BeethovenOdeSimple.pdf, id=813, page=1, 598.235pt x 845.1575pt>
 File: BeethovenOdeSimple.pdf Graphic file (type pdf)
 <use BeethovenOdeSimple.pdf, page 1>
 Package pdftex.def Info: BeethovenOdeSimple.pdf , page1 used on input line 5.
@@ -2360,7 +2307,7 @@ File: BeethovenOdeSimple.pdf Graphic file (type pdf)
 Package pdftex.def Info: BeethovenOdeSimple.pdf , page1 used on input line 5.
 (pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
  [52 <./BeethovenOdeSimple.pdf>]
-<BeethovenOdeNormal.pdf, id=836, 598.235pt x 845.1575pt>
+<BeethovenOdeNormal.pdf, id=855, 598.235pt x 845.1575pt>
 File: BeethovenOdeNormal.pdf Graphic file (type pdf)
 <use BeethovenOdeNormal.pdf>
 Package pdftex.def Info: BeethovenOdeNormal.pdf  used on input line 6.
@@ -2369,7 +2316,7 @@ File: BeethovenOdeNormal.pdf Graphic file (type pdf)
 <use BeethovenOdeNormal.pdf>
 Package pdftex.def Info: BeethovenOdeNormal.pdf  used on input line 6.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<BeethovenOdeNormal.pdf, id=839, page=1, 598.235pt x 845.1575pt>
+<BeethovenOdeNormal.pdf, id=858, page=1, 598.235pt x 845.1575pt>
 File: BeethovenOdeNormal.pdf Graphic file (type pdf)
 <use BeethovenOdeNormal.pdf, page 1>
 Package pdftex.def Info: BeethovenOdeNormal.pdf , page1 used on input line 6.
@@ -2435,23 +2382,23 @@ Package natbib Warning: There were undefined citations.
 [58
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 647.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 647.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 648.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 648.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 647.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 647.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 648.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 648.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 742725FB7F5B2D8AF8401B46D75CC5E0;1690.
+(rerunfilecheck)             Checksum: D781CA0E7066E23ACB721C2D48991A9A;1687.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 49378 strings out of 492649
- 1120325 string characters out of 6129621
- 1407904 words of memory out of 5000000
- 52200 multiletter control sequences out of 15000+600000
+ 49394 strings out of 492649
+ 1120625 string characters out of 6129621
+ 1409968 words of memory out of 5000000
+ 52212 multiletter control sequences out of 15000+600000
  623726 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  78i,18n,136p,10355b,1060s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2473,10 +2420,10 @@ al/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive
 xmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
 e1/public/lm/lmtt10.pfb>
-Output written on main.pdf (70 pages, 1159596 bytes).
+Output written on main.pdf (70 pages, 1161172 bytes).
 PDF statistics:
- 1025 PDF objects out of 1200 (max. 8388607)
- 865 compressed objects within 9 object streams
- 202 named destinations out of 1000 (max. 500000)
+ 1045 PDF objects out of 1200 (max. 8388607)
+ 885 compressed objects within 9 object streams
+ 206 named destinations out of 1000 (max. 500000)
  430 words of extra memory for PDF output out of 10000 (max. 10000000)
 

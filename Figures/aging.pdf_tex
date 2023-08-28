@@ -1,0 +1,86 @@
+%% Creator: Inkscape 1.2.2 (b0a8486, 2022-12-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'aging.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\usepackage{transparent}
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{2729.78523314bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.59176142)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{aging.pdf}}%
+    \put(0.2304772,0.28984383){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Aging\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{aging.pdf}}%
+    \put(0.19715736,0.47594926){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}- White matter\\- Gray matter\\- Vasculature\\- Neurotransmitters\end{tabular}}}}%
+    \put(0.23063724,0.49166155){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Brain Structure\end{tabular}}}}%
+    \put(0.23059242,0.13449039){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Brain Function\end{tabular}}}}%
+    \put(0.08529245,0.3214775){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Other Factors\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{aging.pdf}}%
+    \put(0.37481765,0.32344746){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Cognition\end{tabular}}}}%
+    \put(0.05645176,0.3106074){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}- Education\\- Life experience\\- Stress\\- Genes\\- Exercise\\- Diet\end{tabular}}}}%
+    \put(0.35466457,0.31123525){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}- Semantics\\- Spatial\\- Language\\- Memory\\- Attention\\- Perception\end{tabular}}}}%
+    \put(0.19715736,0.1194412){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}- Activity\\- Variability\\- Functional connectivity\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{aging.pdf}}%
+    \put(0.69130582,0.06514106){\color[rgb]{0,0,0}\transparent{0.94401997}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Cognitive reserve}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{aging.pdf}}%
+    \put(0.55233226,0.17034102){\color[rgb]{0.50196078,0,0}\transparent{0.94401997}\rotatebox{90.00308518}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Cognitive Reserve}\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{aging.pdf}}%
+    \put(0.59299174,0.36894102){\color[rgb]{0,0,0}\transparent{0.94401997}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Neural changes}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{aging.pdf}}%
+    \put(0.63668164,0.22339626){\color[rgb]{0,0,0}\transparent{0.94401997}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Functional }\textbf{Deterioration}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{aging.pdf}}%
+    \put(0.78964406,0.33924643){\color[rgb]{0,0,0}\transparent{0.94401997}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Compensatory }\textbf{Scaffolding}\end{tabular}}}}%
+    \put(0.79015724,0.25921286){\color[rgb]{0,0,0}\transparent{0.94401997}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Scaffolding }\textbf{Enhancement}\end{tabular}}}}%
+    \put(0.94246459,0.29850164){\color[rgb]{0,0,0}\transparent{0.94401997}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Level of Cognitive }\textbf{Function}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{aging.pdf}}%
+    \put(0.78996927,0.22331526){\color[rgb]{0,0,0}\transparent{0.94401997}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{new learning; engagement; }\textbf{exercise; cognitive training}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{aging.pdf}}%
+    \put(0.78997805,0.37038789){\color[rgb]{0,0,0}\transparent{0.94401997}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{frontal recruitment; neurogenesis; }\textbf{distributed processing; bilaterality}\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
